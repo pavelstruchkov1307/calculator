@@ -41,8 +41,8 @@ public class Main {
                 if (oper.equals("+") || oper.equals("/") || oper.equals("*") || oper.equals("-")) {
                     break;
                 } else {
-                    System.out.print("Некорректный ввод. Введите операцию: ");
-                    scan.next();
+                    System.out.print("Некорректный ввод. Введите снова операцию: ");
+
                 }
             }
 
@@ -67,6 +67,7 @@ public class Main {
 
             System.out.print("Повторить вызов калькулятора? 1-Да 0-Нет: ");
             String rep = scan.nextLine();
+            scan.next();
 
             temp = !rep.equals("0");
 
