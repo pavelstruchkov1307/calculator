@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         double a, b;
         String oper ;
-        boolean temp;
+        boolean temp=true;
         Scanner scan = new Scanner(System.in);
         do {
             System.out.print("Введите число a: ");
@@ -66,10 +66,12 @@ public class Main {
             }
 
             System.out.print("Повторить вызов калькулятора? 1-Да 0-Нет: ");
-            String rep = scan.nextLine();
-            scan.next();
+            int rep = scan.nextInt();
+           // scan.next();
 
-            temp = !rep.equals("0");
+            if (rep==0){
+                temp=false;
+            }
 
         } while (temp);
 
