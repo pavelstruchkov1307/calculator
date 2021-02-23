@@ -67,7 +67,7 @@ public class Main {
 
             System.out.print("Повторить вызов калькулятора? 1-Да 0-Нет: ");
             int rep = scan.nextInt();
-           // scan.next();
+
 
             if (rep==0){
                 temp=false;
